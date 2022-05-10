@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="ambienteIntegracaoContinuaApp">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ambiente de Integração Contínua</title>
+    <link rel="shortcut icon" href="app/assets/bbfav.ico" />
+    <link rel="stylesheet" href="app/css/aic-portal.app.css" />
+    <link rel="stylesheet" href="app/css/menu-aic-portal.app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="app/assets/libs/css/select.min.css" rel="stylesheet" />
+    <link href="app/assets/libs/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/assets/libs/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link
+      href="app/assets/libs/css/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="app/assets/libs/css/angular-tooltips.min.css"
+    />
+
+    <script src="app/assets/libs/angular.js"></script>
+    <script src="app/assets/libs/angular-route.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.8.2/angular-locale_pt-br.min.js"
+      integrity="sha512-iBYiwIF7LTdx5JHPzkRBF4ejT2EKbWXErNtgEr4orUGc/KzNfms+gTU3wItqf+p9hVbXeTGPcwIovbdENa6lRg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="app/spas/aic-portal-estatico/aic-portal.app.js"></script>
+    <script src="app/spas/aic-portal-estatico/aic-portal.routes.js"></script>
+    <script src="app/assets/libs/js/angular-tooltips.min.js"></script>
+
+    <!-- Services -->
+    <script src="app/spas/aic-portal-estatico/aic-portal.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-plataforma-bb/modal-plataforma-bb.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-solicitar-atualizacao-permissao/modal-atualizar-permissao.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-kubernetes/modal-kubernetes.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-customize-oferta/modal-customize-oferta.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-log-stream/modal-log-stream.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-solicitacao-enviada/modal-solicitacao-enviada.service.js"></script>
+
+    <!-- Directives -->
+    <script src="app/components/acesso-facil.directive.js"></script>
+    <script src="app/components/menu-lateral-hamburquer.directive.js"></script>
+    <script src="app/spas/aic-portal-estatico/aic-solicitacao-build-deploy/aic-deploy.directive.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/spas/aic-portal-estatico/aic-portal.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/aic-solicitacao-build-deploy/aic-solicitacao.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-plataforma-bb/modal-plataforma-bb.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-customize-oferta/modal-customize-oferta.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-kubernetes/modal-kubernetes.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-grafeno/modal-grafeno.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-solicitacao-enviada/moda-solicitacao-enviada.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-solicitacao-enviada/modal-solicitacao-enviada.service.js"></script>
+    <script src="app/spas/aic-portal-estatico/aic-visualizacao-logs-build-deploy/aic-visualizacao.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-log-stream/modal-log-stream.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-solicitar-atualizacao-permissao/modal-atualizar-permissao.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-iib-bw/modal-iib-bw.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-permissoes/modal-permissoes.controller.js"></script>
+    <script src="app/spas/aic-portal-estatico/modal-pesquisa-esforco/modal-pesquisa-esforco.controller.js"></script>
+
+    <script src="app/assets/libs/js/clipboard.min.js"></script>
+    <script src="app/config/config.js"></script>
+    <script src="app/assets/libs/js/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="app/config/environmentConfig.js"></script>
+    <script src="app/assets/libs/js/select.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-include="'app/components/menu-superior-escuro.html'"></div>
+    <div ng-include="'app/components/menu-superior-amarelo.html'"></div>
+
+    <menu-lateral-hamburguer class="show"></menu-lateral-hamburguer>
+
+    <div ng-view></div>
+    <div
+      style="height: 100%; width: 8%; position: absolute; top: 0"
+      ng-mouseenter="insertMenuHamburguerSimple()"
+      ng-mouseleave="removeMenuHamburguerSimple()"
+    ></div>
+
+    <div ng-include="'app/components/footer.html'"></div>
+  </body>
+</html>
