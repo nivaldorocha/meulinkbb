@@ -1,16 +1,9 @@
-
-
 header {
-	
 	background: #2a5df4;
 	padding: 1px 0;
 }
 
-.principal {
-	background: #2a5df4;
-}
-#banner {	
-	display: center;
+#banner {
 	width:20%;
 	margin: 0 1.5%;	
 }
@@ -27,12 +20,12 @@ header {
 	border-radius: 10px;
 }
 
-.caixa-paginas {
-	padding: 1em 0 1em 0;
+.caixa {
 	background: #fafaf7;	
 	position: relative;
 	width: px;
 	margin: 0 auto;
+	text-decoration: none;
 	margin-bottom: 1em;		
 }
 
@@ -52,7 +45,7 @@ div li{
 	margin-bottom: 1em;		
 	}
 
-.linkdesenv:hover {
+div li:hover {
 	text-decoration: none;
 	color: #0aec28;
 			
@@ -70,7 +63,7 @@ div li{
 }
 
 .linksdesenv li {
-	display: inline-flex;
+	display: inline-block;
 	text-align: center;
 	width: 30%;
 	vertical-align: top;

@@ -73,16 +73,21 @@ ul {
 	margin-right: 15%;
 }
 
-.lista-de-links {
+.div-de-links {
 	background: #FCFC30;
-	display: inline;
+	display: block;
 	font-size-adjust: calc(1);
+    margin: 1em 0 0 10em;
 }
 
 .itens {
 	font-style: italic
 }
 
+.lista-link {
+    margin: 1em 0 0 10em;
+    display: inline;
+}
 
 .logo-rodape {
     background-color: #e9f00b;
@@ -99,7 +104,6 @@ ul {
     color: var(--cinza-secundario);
     font-size: 14px;	
 }
-
 
 
 

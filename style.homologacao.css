@@ -1,9 +1,11 @@
 header {
+	text-align: center;
 	background: #2a5df4;
 	padding: 1px 0;
 }
 
 #banner {
+	display:inline-flex;
 	width:20%;
 	margin: 0 1.5%;	
 }
@@ -102,6 +104,10 @@ footer {
     margin: 1em 0;
     color: var(--cinza-secundario);
     font-size: 14px;	
+}
+
+.lista-links {
+	margin: 1em;
 }
 
 
