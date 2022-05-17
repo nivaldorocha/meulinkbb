@@ -4,7 +4,9 @@ header {
 	padding: 1px 0;
 }
 
-
+body {
+	position: relative;
+}
 
 #cabecalho {
 	text-align: center;
@@ -48,7 +50,7 @@ a:hover {
 				
 }
 
-.rel-links {
+.corpo-links {
 	display: inline-block;
 	position: relative;
 	text-align: center;
@@ -65,7 +67,7 @@ a:hover {
 
 .item-listalink {
 	display: inline-block;
-	list-style-type: none;	
+    text-align:center;	
 	margin: 0 1.5%;
 	padding: 10px 20px;
 	box-sizing: border-box;
