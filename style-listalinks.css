@@ -1,0 +1,107 @@
+header {
+	text-align: center;
+	background: #2a5df4;
+	padding: 1px 0;
+}
+
+
+
+#cabecalho {
+	text-align: center;
+	font-size: 200%;
+
+
+}
+
+.titulo-corpo {
+	text-align: center;
+	font-size: 100%;
+}
+
+
+
+
+.topo-links {
+	width: 100%;
+	text-align: center;
+	padding: 20px 20px;	
+	box-sizing: border-box;
+	border: 20px solid #4201f5;
+	border-radius: 1px;
+	text-decoration: none;						
+}
+
+.item-paginas {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	vertical-align: top;
+	padding: 5px;   
+	font-size: 25px;
+	font-weight: bold;	
+				
+}
+
+a:hover {
+	color: #040504;
+	background-color: #eae60e;
+				
+}
+
+.rel-links {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border: 10px solid #4201f5;
+	border-radius: 1px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+	text-decoration: none;		
+}
+
+.item-listalink {
+	list-style-type: none;	
+	margin: 0 1.5%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: 2px solid #4201f5;
+	border-radius: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+	position: relative;
+
+}
+
+
+
+footer {
+	padding: 1px 0;	
+    display: inline;	
+	width: 1em;
+	text-align: center;
+	margin: auto;	
+}
+
+.logo-rodape {
+	display:block;
+	width: 2em;
+	margin: 1em auto;				
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;	
+}
+
+
+
+
+
